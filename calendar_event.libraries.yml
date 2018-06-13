@@ -1,0 +1,21 @@
+fullcalendar-js:
+  remote: https://github.com/fullcalendar/fullcalendar
+  version: 3.9.0
+  license:
+    name: MIT
+    url: https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css: { type: external, minified: true }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js: { type: external, minified: true }
+    
+custom-js:
+  version: 1.x
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains calendar_event.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function calendar_event_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the calendar_event module.
+    case 'help.page.calendar_event':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This modules provides a calendar for displaying events.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

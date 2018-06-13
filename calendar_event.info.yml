@@ -1,0 +1,7 @@
+name: 'calendar_event'
+type: module
+description: 'This modules provides a calendar for displaying events.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - block
